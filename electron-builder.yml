@@ -1,0 +1,14 @@
+appId: com.ireul.electron
+productName: ireul
+directories:
+  output: dist_electron
+  app: dist_electron/bundled
+win:
+  target:
+    - target: nsis
+      arch:
+        - ia32
+nsis:
+  oneClick: false
+  warningsAsErrors: false
+  script: "installer.nsi"
